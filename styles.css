@@ -1,11 +1,43 @@
-h1{
-    font-family:Arial, Helvetica, sans-serif
+
+/*Overarching layout settings*/
+
+
+body{
+    font-family:"Avenir Next", Helvetica, sans-serif;
+}
+
+ul{
+    padding-left: 14px;
 }
 
 h2{
-    font-family:Arial, Helvetica, sans-serif
+    font-size: 36px;
 }
 
-p{
-    font-family: 'Palatino', Times, serif;;
+/*Overarching layout settings*/
+
+
+.hero-section{
+    margin: 0px 0px 75px 0px ;
+    display: flex;
+    height: 432px;
+    background: #f7f1f1c4;
+    padding-top: 100px;
+}
+
+#hero-text{
+    padding-left: 300px;
+}
+
+
+.about{
+    margin: 75px 120px 75px 120px ;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.text{
+    padding: 30px;
+    flex-direction: column;
 }
