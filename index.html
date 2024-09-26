@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta 
         name="Lab 1 - Personal Portfolio"
         content="Personal Portfolio of Hannes to showcase HTML and CSS skills"
@@ -12,14 +13,19 @@
 <body>
 
 <header>
-    <nav> </nav>
+        <a href="#hero-section"> HOME </a>
+        <a href="#biography"> MY PAST </a>
+        <a href="#interests"> WHAT I ENJOY </a>
+        <a href="#future"> MY FUTURE </a>
+        <a href="#form"> CONTACT ME </a>
+        <a href="https://www.instagram.com/hhemgren/">INSTAGRAM</a>
 </header>
 <main>
-    <section class="hero-section">
+    <section class="hero-section" id="hero-section">
         <div class="text" id="hero-text"> 
           <h2>HELLO, <br> I'M HANNES HEMGREN</h1>
-          <h3>GET TO KNOW ME BELOW</h2>
-
+          <h3>GET TO KNOW ME BELOW</h2> <br>
+          <a href="#form" class="button" id="hero-button"> CONTACT ME</a>
         </div>    
         <img src="Hero.JPG" alt="Hannes in black t-shirt smiling." 
         height="432px" width="400px"> 
@@ -30,19 +36,19 @@
        <div class="text"> 
          <h2>MY PAST</h2>
          <p> I am a 22 year old guy born in Jönköping, raised in Lund. Like most others my age, 
-            a majority of my life has been spent in school. Here are some of the schools I have attended:
+             a majority of my life has been spent in school. Here are some of the schools I have attended:
             <ul>
                 <li> Fäladsgården, Lund.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2014 - 2018</li>
                 <li> Katedralskolan, Lund.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018 - 2021</li>
                 <li> Augustana College, USA.&nbsp;&nbsp;&nbsp;2021 - 2022</li>
                 <li> Lunds universitet, Lund.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022 - Now</li>
             </ul>
-            At Lunds universitet I am currently on my fifth semester at Ekonomie kandidatprogrammet. <br> <br>
-            Career wise I spent two years in sales between 2017 and 2018. Since 2019 I have spent my 
+             At Lunds universitet I am currently on my fifth semester at Ekonomie kandidatprogrammet. <br> <br>
+             Career wise I spent two years in sales between 2017 and 2018. Since 2019 I have spent my 
             evenings and weekends on my own ecommerce projects. In 2020 it resulted in a succesful 
-            UF business - breaking the schools previous revenue (and profit) record for a UF business. 
-            Two failed projects later, in 2023 I took on a roll as performance marketing manager of 
-            my brothers men's bracelet brand Alton of Sweden.
+             UF business - breaking the schools previous revenue (and profit) record. 
+             Two failed projects later, I took on a roll as performance marketing manager of 
+             my brothers men's bracelet brand Alton of Sweden.
          </p>
        </div>
         <img src="IMG_7686.JPG" alt="Hannes standing in front of a food market in Uganda, wearing sunglasses and a cap." 
@@ -52,7 +58,7 @@
     <section class="about" id="interests">
        
        <img src="IMG_4122.JPG" alt="Hannes soccer team emphatically celebrating a goal." 
-        height="500px" width="500px"> 
+        height="500px" width="500px" class="img"> 
        
         <div class="text"> 
          <h2>WHAT I ENJOY</h2>
@@ -98,11 +104,17 @@
         </div>
         
         <img src="IMG_Perth.JPG" alt="Perth's skyline from below." 
-        height="500px" width="500px"> 
+        height="500px" width="500px" class="img"> 
     </section>
 
-    <section class="form">
-        <h2></h2>
+    <section class="form" id="form">
+        <h2>CONTACT ME</h2>
+        <form action="mailto:hannes.hemgren@gmail.com" method="post" enctype="text/plain"> 
+            <label for="message">Message:</label> <br> 
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea> <br> <br> 
+            <input type="submit" value="SEND MESSAGE" class="button">
+
+        </form>
 
     </section>
 
@@ -110,6 +122,15 @@
 
 </main>
 <footer>
+
+    <p> hannes.hemgren@gmail.com <br>
+        Wellington St. Perth, Australia
+    </p>
+    <p> &copy; Hannes Hemgren</p>
+    <a href="...">PRIVACY POLICY</a>
+    <a href="...">TERMS OF SERVICE</a>
+
+
 </footer>
 
 </body>
